@@ -94,7 +94,7 @@ td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:center
 /* Sponsor Images */
 table.sponsors{width:800px;}
 td.sponsor{white-space:nowrap; width:33%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
-td.sponsor img{width: 100%}
+td.sponsor img{width: 200px}
 
 /* The Table on the Program Page */
 td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
@@ -114,7 +114,7 @@ img.center{display:block; width:67%; margin:1em auto 2em auto;}
 /* Flyer Images */
 table.flyers{width:800px;}
 td.flyer{white-space:nowrap; width:50%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
-td.sponsor img{width: 100%}
+/* td.sponsor img{width: 100%} */
 
 footer{font-size:0.875em; margin-top:12em; text-align:center;}
 
