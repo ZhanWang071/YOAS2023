@@ -76,6 +76,10 @@ th,td{
     /*border: 1px solid black;*/
 }
 
+/* tr{
+    padding-bottom: 1.6em;
+} */
+
 /* Website Banner */
 .banner {position: relative; font-family:'Roboto Slab',serif;}
 .top-left {font-size:5.33em; color: #505050; background: #fafafa; text-align: center; width: 1000px; height: 67px; position: absolute; padding: 36px 0 0 0; top: 0px;}
@@ -93,7 +97,7 @@ td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:center
 
 /* Sponsor Images */
 table.sponsors{width:800px;}
-td.sponsor{white-space:nowrap; width:33%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
+td.sponsor{white-space:nowrap; width:33%; text-align:center; vertical-align:middle; padding:0px 0px 0.8em 0px;}
 td.sponsor img{width: 200px}
 
 /* The Table on the Program Page */
