@@ -10,18 +10,19 @@
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
     <title>Symposium on Chinese Archaeology and Cultural Research</title>
+    <script type="text/javascript" src="util.js" defer="defer"></script>
 </head>
 
 <p>
 
     <div class="banner">
       <img src="assets/banner.jpg" alt="Conference Template Banner" />
-      <div class="top-left" style="font-size: 42px">
+      <div class="top-left reality" style="font-size: 42px;" id="title" onclick="titleOnClick()">
         <span class="title2">The 7th Symposium on </span>
         <span class="title1">Chinese Archaeology and Cultural Research </span>
         <span class="year">(CACR 2023)</span>
       </div>
-      <div class="bottom-right">
+      <div class="bottom-right reality" id="place" onclick="placeOnClick()">
         Call for Papers Now! <br />
         June 28, 2023 <br />
         Bangkok, Thailand
@@ -53,7 +54,7 @@
     </table>
 
 
-    <h2>Submission Information</h2>
+    <h2 class="reality" onclick="submissionOnClick()">Submission Information</h2>
     <p>We are pleased to invite researchers, academics, professionals, and students to submit abstracts and papers for presentation at the 37th Symposium on Chinese Archaeology and Cultural Research (CACR 2023). Please follow the guidelines below to ensure your submission is considered for inclusion in the conference program.</p>
     <!-- <p>
         Here&rsquo;s where you provide instructions how to register for your conference.
@@ -68,7 +69,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
     </p> -->
 
-    <h3>Topics of Interest</h3>
+    <h3 class="reality" onclick="topicOnClick()">Topics of Interest</h3>
     <p>Submissions should focus on ocean archaeology in the Yangzi region, including but not limited to:
       <ul>
       <li>Prehistoric art and symbolism in Chinese archaeology</li>
@@ -154,6 +155,20 @@
       Copyright &copy; 2023 CACR
     </footer>
 
+        <!-- 弹窗 -->
+    <div id="myModal" class="modal">
+    
+      <!-- 关闭按钮 -->
+      <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+    
+      <!-- 弹窗内容 -->
+      <img class="modal-content" id="img01">
+    
+      <input type="button" value="<" id="i1"><!--上一张按钮-->
+		  <input type="button" value=">" id="i2"><!--下一张按钮-->
+      <!-- 文本描述 -->
+      <!-- <div id="caption"></div> -->
+    </div>
 </body>
 </html>
 

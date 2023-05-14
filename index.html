@@ -9,17 +9,18 @@
     <meta name="distribution" content="global" />
     <meta name="KeyWords" content="Conference" />
     <title>Symposium on Chinese Archaeology and Cultural Research</title>
+    <script type="text/javascript" src="util.js" defer="defer"></script>
   </head>
 
-  <P>
+  <body>
     <div class="banner">
       <img src="assets/banner.jpg" alt="Conference Template Banner" />
-      <div class="top-left" style="font-size: 42px">
+      <div class="top-left reality" style="font-size: 42px;" id="title" onclick="titleOnClick()">
         <span class="title2">The 7th Symposium on </span>
         <span class="title1">Chinese Archaeology and Cultural Research </span>
         <span class="year">(CACR 2023)</span>
       </div>
-      <div class="bottom-right">
+      <div class="bottom-right reality" id="place" onclick="placeOnClick()">
         Call for Papers Now! <br />
         June 28, 2023 <br />
         Bangkok, Thailand
@@ -50,7 +51,7 @@
       </tr>
     </table>
 
-    <h2>ABOUT THE SYMPOSIUM</h2>
+    <h2 class="reality" id="sympInfo" onclick="sympInfoOnClick()">ABOUT THE SYMPOSIUM</h2>
     <p>
       Welcome to <span class="conf-name">the 7th Symposium on Chinese Archaeology and Cultural Research</span>! This year, we are delighted to gather esteemed professionals, emerging scholars, and passionate enthusiasts in the field of archaeology to exchange ideas, present research findings, and explore the fascinating realm of ancient Chinese civilization.
     </p>
@@ -114,5 +115,18 @@
       <a href="https://github.com/mikepierce">Mike Pierce</a> -->
       Copyright &copy; 2023 CACR
     </footer>
+
+    <!-- 弹窗 -->
+    <div id="myModal" class="modal">
+    
+      <!-- 关闭按钮 -->
+      <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+    
+      <!-- 弹窗内容 -->
+      <img class="modal-content" id="img01">
+    
+      <!-- 文本描述 -->
+      <!-- <div id="caption"></div> -->
+    </div>
   </body>
 </html>

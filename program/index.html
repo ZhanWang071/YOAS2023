@@ -1,30 +1,36 @@
 <!DOCTYPE html>
-<html lang='en'>
-
-<head>
-    <base href="..">
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default">
-    </script>
-    <meta name="description" content="Conference Template">
-    <meta name="resource-type" content="document">
-    <meta name="distribution" content="global">
-    <meta name="KeyWords" content="Conference">
+<html lang="en">
+  <head>
+    <base href=".." />
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css" />
+    <script
+      type="text/javascript"
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default"
+    ></script>
+    <meta name="description" content="Conference Template" />
+    <meta name="resource-type" content="document" />
+    <meta name="distribution" content="global" />
+    <meta name="KeyWords" content="Conference" />
     <title>Symposium on Chinese Archaeology and Cultural Research</title>
-</head>
+    <script type="text/javascript" src="util.js" defer="defer"></script>
+  </head>
 
-<body>
-
+  <body>
     <div class="banner">
       <img src="assets/banner.jpg" alt="Conference Template Banner" />
-      <div class="top-left" style="font-size: 42px">
+      <div
+        class="top-left reality"
+        style="font-size: 42px"
+        id="title"
+        onclick="titleOnClick()"
+      >
         <span class="title2">The 7th Symposium on </span>
         <span class="title1">Chinese Archaeology and Cultural Research </span>
         <span class="year">(CACR 2023)</span>
       </div>
-      <div class="bottom-right">
+      <div class="bottom-right reality" id="place" onclick="placeOnClick()">
         Call for Papers Now! <br />
         June 28, 2023 <br />
         Bangkok, Thailand
@@ -42,7 +48,9 @@
           >
         </td>
         <td class="navigation">
-          <a class="current" title="Conference Program" href="program">Program</a>
+          <a class="current" title="Conference Program" href="program"
+            >Program</a
+          >
         </td>
         <!-- <td class="navigation">
           <a title="Directions to the Conference" href="accomodation"
@@ -55,7 +63,7 @@
       </tr>
     </table>
 
-    <h2>Conference Program</h2>
+    <h2 class="reality" onclick="sessionOnClick()">Conference Program</h2>
 
     <!-- <table>
         <tr>
@@ -334,68 +342,104 @@
     </table> -->
 
     <table class="plenary">
-        <tr>
-            <td class="title">
-                Session 1: Unearthing the Secrets of Prehistoric Art and Symbolism
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                In this session, we delve into the fascinating world of prehistoric art and symbolism in ancient China. Presenters will showcase their research on various artistic expressions, such as cave paintings, pottery motifs, and carved figurines, offering insights into the meaning, function, and cultural significance of these artifacts. This session also explores the thematic continuity and stylistic evolution of Chinese art, shedding light on the cognitive and social development of prehistoric societies.
-            </td>
-        </tr>
+      <tr>
+        <td class="title">
+          Session 1: Unearthing the Secrets of Prehistoric Art and Symbolism
+        </td>
+      </tr>
+      <tr>
+        <td class="abstract">
+          In this session, we delve into the fascinating world of prehistoric
+          art and symbolism in ancient China. Presenters will showcase their
+          research on various artistic expressions, such as cave paintings,
+          pottery motifs, and carved figurines, offering insights into the
+          meaning, function, and cultural significance of these artifacts. This
+          session also explores the thematic continuity and stylistic evolution
+          of Chinese art, shedding light on the cognitive and social development
+          of prehistoric societies.
+        </td>
+      </tr>
     </table>
 
     <table class="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="title">
-                Session 2: Tracing Cultural Connections: Interactions and Exchanges in Ancient China
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                This session focuses on the cultural connections and interactions between ancient China and other civilizations. Scholars will present their research on the transmission of ideas, technologies, and material culture across regions and time periods, highlighting the dynamic and interconnected nature of ancient societies. Topics include trade networks, migration patterns, and the spread of religious beliefs, providing a comprehensive understanding of the complex web of cultural exchanges in the past.
-            </td>
-        </tr>
+      <tr>
+        <td class="title">
+          Session 2: Tracing Cultural Connections: Interactions and Exchanges in
+          Ancient China
+        </td>
+      </tr>
+      <tr>
+        <td class="abstract">
+          This session focuses on the cultural connections and interactions
+          between ancient China and other civilizations. Scholars will present
+          their research on the transmission of ideas, technologies, and
+          material culture across regions and time periods, highlighting the
+          dynamic and interconnected nature of ancient societies. Topics include
+          trade networks, migration patterns, and the spread of religious
+          beliefs, providing a comprehensive understanding of the complex web of
+          cultural exchanges in the past.
+        </td>
+      </tr>
     </table>
 
     <table class="plenary">
-        <tr>
-            <td class="title">
-                Session 3: Innovative Methodologies: New Frontiers in Chinese Archaeological Science and Technology
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                In this session, we explore cutting-edge methodologies and technological advancements in Chinese archaeology. Presentations will cover a range of topics, from remote sensing and geospatial analysis to advanced dating techniques and bioarchaeological investigations. This session aims to foster interdisciplinary collaboration and demonstrate the potential of innovative approaches to advance our understanding of ancient Chinese societies.
-            </td>
-        </tr>
+      <tr>
+        <td class="title">
+          Session 3: Innovative Methodologies: New Frontiers in Chinese
+          Archaeological Science and Technology
+        </td>
+      </tr>
+      <tr>
+        <td class="abstract">
+          In this session, we explore cutting-edge methodologies and
+          technological advancements in Chinese archaeology. Presentations will
+          cover a range of topics, from remote sensing and geospatial analysis
+          to advanced dating techniques and bioarchaeological investigations.
+          This session aims to foster interdisciplinary collaboration and
+          demonstrate the potential of innovative approaches to advance our
+          understanding of ancient Chinese societies.
+        </td>
+      </tr>
     </table>
 
     <table class="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="title">
-                Session 4: Preserving the Past: Conservation and Management of Chinese Archaeological Heritage
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                This session addresses the critical issue of conserving and managing China's rich archaeological heritage. Presenters will share their experiences, best practices, and challenges in the preservation of cultural resources, including site management, artifact conservation, and community engagement. Discussions will also explore the role of policy, education, and international cooperation in safeguarding China's archaeological legacy for future generations.
-            </td>
-        </tr>
+      <tr>
+        <td class="title">
+          Session 4: Preserving the Past: Conservation and Management of Chinese
+          Archaeological Heritage
+        </td>
+      </tr>
+      <tr>
+        <td class="abstract">
+          This session addresses the critical issue of conserving and managing
+          China's rich archaeological heritage. Presenters will share their
+          experiences, best practices, and challenges in the preservation of
+          cultural resources, including site management, artifact conservation,
+          and community engagement. Discussions will also explore the role of
+          policy, education, and international cooperation in safeguarding
+          China's archaeological legacy for future generations.
+        </td>
+      </tr>
     </table>
 
-        <table class="plenary">
-        <tr>
-            <td class="title">
-                Session 5: Exploring the Social Landscape: Early Chinese Civilizations and Societal Structures
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                In this session, we examine the social landscape of early Chinese civilizations through the lens of archaeology. Scholars will present their research on various aspects of ancient society, such as social stratification, political organization, and economic systems. This session also investigates the role of kinship, ritual, and ideology in shaping social structures, providing a comprehensive understanding of the complex dynamics that underpinned early Chinese civilizations.
-            </td>
-        </tr>
+    <table class="plenary">
+      <tr>
+        <td class="title">
+          Session 5: Exploring the Social Landscape: Early Chinese Civilizations
+          and Societal Structures
+        </td>
+      </tr>
+      <tr>
+        <td class="abstract">
+          In this session, we examine the social landscape of early Chinese
+          civilizations through the lens of archaeology. Scholars will present
+          their research on various aspects of ancient society, such as social
+          stratification, political organization, and economic systems. This
+          session also investigates the role of kinship, ritual, and ideology in
+          shaping social structures, providing a comprehensive understanding of
+          the complex dynamics that underpinned early Chinese civilizations.
+        </td>
+      </tr>
     </table>
 
     <footer>
@@ -404,6 +448,22 @@
       Copyright &copy; 2023 CACR
     </footer>
 
-</body>
-</html>
+    <!-- 弹窗 -->
+    <div id="myModal" class="modal">
+      <!-- 关闭按钮 -->
+      <span
+        class="close"
+        onclick="document.getElementById('myModal').style.display='none'"
+        >&times;</span
+      >
 
+      <!-- 弹窗内容 -->
+      <img class="modal-content" id="img01" />
+
+      <input type="button" value="<" id="i1" /><!--上一张按钮-->
+      <input type="button" value=">" id="i2" /><!--下一张按钮-->
+      <!-- 文本描述 -->
+      <!-- <div id="caption"></div> -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+
+// 获取弹窗
+var modal = document.getElementById("myModal");
+
+// 获取图片插入到弹窗 - 使用 "alt" 属性作为文本部分的内容
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+var i1 = document.getElementById("i1");
+var i2 = document.getElementById("i2");
+
+// 获取 <span> 元素，设置关闭按钮
+var span = document.getElementsByClassName("close")[0];
+
+// 当点击 (x), 关闭弹窗
+span.onclick = function () {
+    modal.style.display = "none";
+    i1.style.display = "none";
+    i2.style.display = "none";
+};
+
+// var title = document.getElementById("title");
+// title.onclick = function () {
+//   modal.style.display = "block";
+//   modalImg.src = "assets/title.png";
+//   // captionText.innerHTML = this.alt;
+// };
+
+// var place = document.getElementById("place");
+// place.onclick = function () {
+//   modal.style.display = "block";
+//   modalImg.src = "assets/place.png";
+//   // captionText.innerHTML = this.alt;
+// };
+
+function titleOnClick() {
+    // imgPlane();
+    modal.style.display = "block";
+    modalImg.src = "assets/title.png";
+}
+
+function placeOnClick() {
+    // imgPlane();
+    modal.style.display = "block";
+    modalImg.src = "assets/place.png";
+}
+
+function sympInfoOnClick() {
+    modal.style.display = "block";
+    modalImg.src = "assets/sympInfo.png";
+}
+
+function topicOnClick() {
+    modal.style.display = "block";
+    modalImg.src = "assets/topics.png";    
+}
+
+function submissionOnClick() {
+    modal.style.display = "block";
+    var i = 1;
+    modalImg.src = "assets/submission1.png";
+    var i1 = document.getElementById("i1");
+    var i2 = document.getElementById("i2");
+    i1.style.display = "block";
+    i2.style.display = "block";
+    i1.onclick = function () {
+        i -= 1;
+        if (i==0) i = 4;
+        modalImg.src = "assets/submission"+String(i)+".png";
+    }
+    i2.onclick = function () {
+      i += 1;
+      if (i == 5) i = 1;
+      modalImg.src = "assets/submission" + String(i) + ".png";
+    };
+}
+
+function sessionOnClick() {
+    modal.style.display = "block";
+    var i = 1;
+    modalImg.src = "assets/session1.png";
+    var i1 = document.getElementById("i1");
+    var i2 = document.getElementById("i2");
+    i1.style.display = "block";
+    i2.style.display = "block";
+    i1.onclick = function () {
+        i -= 1;
+        if (i == 0) i = 3;
+        modalImg.src = "assets/session" + String(i) + ".png";
+    };
+    i2.onclick = function () {
+        i += 1;
+        if (i == 4) i = 1;
+        modalImg.src = "assets/session" + String(i) + ".png";
+    };
+}
