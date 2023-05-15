@@ -1,4 +1,3 @@
-
 // 获取弹窗
 var modal = document.getElementById("myModal");
 
@@ -13,9 +12,9 @@ var span = document.getElementsByClassName("close")[0];
 
 // 当点击 (x), 关闭弹窗
 span.onclick = function () {
-    modal.style.display = "none";
-    i1.style.display = "none";
-    i2.style.display = "none";
+  modal.style.display = "none";
+  i1.style.display = "none";
+  i2.style.display = "none";
 };
 
 // var title = document.getElementById("title");
@@ -33,65 +32,65 @@ span.onclick = function () {
 // };
 
 function titleOnClick() {
-    // imgPlane();
-    modal.style.display = "block";
-    modalImg.src = "assets/title.png";
+  // imgPlane();
+  modal.style.display = "block";
+  modalImg.src = "assets/title.png";
 }
 
 function placeOnClick() {
-    // imgPlane();
-    modal.style.display = "block";
-    modalImg.src = "assets/place.png";
+  // imgPlane();
+  modal.style.display = "block";
+  modalImg.src = "assets/place.png";
 }
 
 function sympInfoOnClick() {
-    modal.style.display = "block";
-    modalImg.src = "assets/sympInfo.png";
+  modal.style.display = "block";
+  modalImg.src = "assets/sympInfo.png";
 }
 
 function topicOnClick() {
-    modal.style.display = "block";
-    modalImg.src = "assets/topics.png";    
+  modal.style.display = "block";
+  modalImg.src = "assets/topics.png";
 }
 
 function submissionOnClick() {
-    modal.style.display = "block";
-    var i = 1;
-    modalImg.src = "assets/submission1.png";
-    var i1 = document.getElementById("i1");
-    var i2 = document.getElementById("i2");
-    i1.style.display = "block";
-    i2.style.display = "block";
-    i1.onclick = function () {
-        i -= 1;
-        if (i==0) i = 4;
-        modalImg.src = "assets/submission"+String(i)+".png";
-    }
-    i2.onclick = function () {
-      i += 1;
-      if (i == 5) i = 1;
-      modalImg.src = "assets/submission" + String(i) + ".png";
-    };
+  modal.style.display = "block";
+  var i = 1;
+  modalImg.src = "assets/submission1.png";
+  var i1 = document.getElementById("i1");
+  var i2 = document.getElementById("i2");
+  i1.style.display = "block";
+  i2.style.display = "block";
+  i1.onclick = function () {
+    i -= 1;
+    if (i == 0) i = 4;
+    modalImg.src = "assets/submission" + String(i) + ".png";
+  };
+  i2.onclick = function () {
+    i += 1;
+    if (i == 5) i = 1;
+    modalImg.src = "assets/submission" + String(i) + ".png";
+  };
 }
 
 function sessionOnClick() {
-    modal.style.display = "block";
-    var i = 1;
-    modalImg.src = "assets/session1.png";
-    var i1 = document.getElementById("i1");
-    var i2 = document.getElementById("i2");
-    i1.style.display = "block";
-    i2.style.display = "block";
-    i1.onclick = function () {
-        i -= 1;
-        if (i == 0) i = 3;
-        modalImg.src = "assets/session" + String(i) + ".png";
-    };
-    i2.onclick = function () {
-        i += 1;
-        if (i == 4) i = 1;
-        modalImg.src = "assets/session" + String(i) + ".png";
-    };
+  modal.style.display = "block";
+  var i = 1;
+  modalImg.src = "assets/session1.png";
+  var i1 = document.getElementById("i1");
+  var i2 = document.getElementById("i2");
+  i1.style.display = "block";
+  i2.style.display = "block";
+  i1.onclick = function () {
+    i -= 1;
+    if (i == 0) i = 3;
+    modalImg.src = "assets/session" + String(i) + ".png";
+  };
+  i2.onclick = function () {
+    i += 1;
+    if (i == 4) i = 1;
+    modalImg.src = "assets/session" + String(i) + ".png";
+  };
 }
 
 function headingOnClick() {
@@ -145,4 +144,62 @@ function com9OnClick() {
 function com10OnClick() {
   modal.style.display = "block";
   modalImg.src = "assets/committee10.png";
+}
+
+function paper1OnClick() {
+  modal.style.display = "block";
+  modalImg.src = "assets/paper1.png";
+}
+function paper2OnClick() {
+  modal.style.display = "block";
+  modalImg.src = "assets/paper2.png";
+}
+function paper3OnClick() {
+  modal.style.display = "block";
+  modalImg.src = "assets/paper3.png";
+}
+
+function imgOnClick(img) {
+  modal.style.display = "block";
+  modalImg.src = img;
+}
+
+function gigasOnClick() {
+  modal.style.display = "block";
+  var i = 1;
+  modalImg.src = "assets/gigas-1.png";
+  var i1 = document.getElementById("i1");
+  var i2 = document.getElementById("i2");
+  i1.style.display = "block";
+  i2.style.display = "block";
+  i1.onclick = function () {
+    i -= 1;
+    if (i == 0) i = 2;
+    modalImg.src = "assets/gigas-" + String(i) + ".png";
+  };
+  i2.onclick = function () {
+    i += 1;
+    if (i == 3) i = 1;
+    modalImg.src = "assets/gigas-" + String(i) + ".png";
+  };
+}
+
+function euryOnClick() {
+  modal.style.display = "block";
+  var i = 1;
+  modalImg.src = "assets/eury-1.png";
+  var i1 = document.getElementById("i1");
+  var i2 = document.getElementById("i2");
+  i1.style.display = "block";
+  i2.style.display = "block";
+  i1.onclick = function () {
+    i -= 1;
+    if (i == 0) i = 8;
+    modalImg.src = "assets/eury-" + String(i) + ".png";
+  };
+  i2.onclick = function () {
+    i += 1;
+    if (i == 9) i = 1;
+    modalImg.src = "assets/eury-" + String(i) + ".png";
+  };
 }
