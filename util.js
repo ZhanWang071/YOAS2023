@@ -93,3 +93,56 @@ function sessionOnClick() {
         modalImg.src = "assets/session" + String(i) + ".png";
     };
 }
+
+function headingOnClick() {
+  modal.style.display = "block";
+  modalImg.src = "assets/heading.png";
+}
+
+function comOnClick() {
+  modal.style.display = "block";
+  modalImg.src = "assets/committee.png";
+}
+
+function com1OnClick() {
+  modal.style.display = "block";
+  modalImg.src = "assets/committee1.png";
+}
+
+function com2OnClick() {
+  modal.style.display = "block";
+  modalImg.src = "assets/committee2.png";
+}
+
+function com3OnClick() {
+  modal.style.display = "block";
+  modalImg.src = "assets/committee3.png";
+}
+function com4OnClick() {
+  modal.style.display = "block";
+  modalImg.src = "assets/committee4.png";
+}
+function com5OnClick() {
+  modal.style.display = "block";
+  modalImg.src = "assets/committee5.png";
+}
+function com6OnClick() {
+  modal.style.display = "block";
+  modalImg.src = "assets/committee6.png";
+}
+function com7OnClick() {
+  modal.style.display = "block";
+  modalImg.src = "assets/committee7.png";
+}
+function com8OnClick() {
+  modal.style.display = "block";
+  modalImg.src = "assets/committee8.png";
+}
+function com9OnClick() {
+  modal.style.display = "block";
+  modalImg.src = "assets/committee9.png";
+}
+function com10OnClick() {
+  modal.style.display = "block";
+  modalImg.src = "assets/committee10.png";
+}

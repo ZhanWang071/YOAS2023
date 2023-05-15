@@ -10,13 +10,17 @@
     <meta name="KeyWords" content="Conference" />
     <title>Symposium on Chinese Archaeology and Cultural Research</title>
     <script type="text/javascript" src="util.js" defer="defer"></script>
-
   </head>
 
   <body>
     <div class="banner">
-      <img src="assets/banner.jpg" alt="Conference Template Banner" />
-      <div class="top-left reality" style="font-size: 42px;" id="title" onclick="titleOnClick()">
+      <img class="reality" onclick="headingOnClick()" src="assets/banner.jpg" alt="Conference Template Banner" />
+      <div
+        class="top-left reality"
+        style="font-size: 42px"
+        id="title"
+        onclick="titleOnClick()"
+      >
         <span class="title2">The 7th Symposium on </span>
         <span class="title1">Chinese Archaeology and Cultural Research </span>
         <span class="year">(CACR 2023)</span>
@@ -54,7 +58,6 @@
       </tr>
     </table>
 
-
     <!-- <p>
         I got lazy on this page and didn&rsquo;t mock up any template flyers for this template website.
         So these are the flyers that <a target="_blank" href="https://math.jonathanalcaraz.com/">Jonathan Alcaraz</a>
@@ -77,61 +80,61 @@
         </tr>
     </table> -->
 
-    <h2>Organizing Committees</h2>
+    <h2 class="reality" onclick="comOnClick()">Organizing Committees</h2>
     <table id="PUTSPEAKERNAMEHERE">
       <tr>
-        <td class="sponsor">
+        <td class="sponsor reality" onclick="com1OnClick()">
           <img src="assets/liliu.jpg" alt="liliu" /> <br />
           <span class="people">Li Liu</span><br />
           Chinese Archaeology, Stanford University
         </td>
-        <td class="sponsor">
+        <td class="sponsor reality" onclick="com2OnClick()">
           <img src="assets/rawanflad.jpg" alt="rawanflad" /><br />
           <span class="people">Rowan Flad</span><br />
           Archaeology, Harvard University
         </td>
-        <td class="sponsor">
+        <td class="sponsor reality" onclick="com3OnClick()">
           <img src="assets/GideonShelach.jpg" alt="GideonShelach" /><br />
           <span class="people">Gideon Shelach</span><br />
           Archaeology, The Hebrew University of Jerusalem
         </td>
       </tr>
       <tr>
-        <td class="sponsor">
+        <td class="sponsor reality" onclick="com4OnClick()">
           <img src="assets/ZhaoHui.jpg" alt="ZhaoHui" /> <br />
           <span class="people">Zhao Hui</span><br />
           Archaeology, The Chinese Academy of Social Sciences
         </td>
-        <td class="sponsor">
+        <td class="sponsor reality" onclick="com5OnClick()">
           <img src="assets/TangJigen.jpg" alt="TangJigen" /><br />
           <span class="people">Tang Jigen</span><br />
           Archaeology, Nanjing University
         </td>
-        <td class="sponsor">
+        <td class="sponsor reality" onclick="com6OnClick()">
           <img src="assets/ChenXingcan.jpg" alt="ChenXingcan" /><br />
           <span class="people">Chen Xingcan</span><br />
           The Institute of Archaeology, Chinese Academy of Social Sciences
         </td>
       </tr>
       <tr>
-        <td class="sponsor">
+        <td class="sponsor reality" onclick="com7OnClick()">
           <img src="assets/ZhuYanping.jpg" alt="ZhuYanping" /> <br />
           <span class="people">Zhu Yanping</span><br />
           Archaeology, Peking University
         </td>
-        <td class="sponsor">
+        <td class="sponsor reality" onclick="com8OnClick()">
           <img src="assets/XiaohongWu.jpg" alt="XiaohongWu" /><br />
           <span class="people">Xiaohong Wu</span><br />
           Anthropology, The University of Chicago
         </td>
-        <td class="sponsor">
+        <td class="sponsor reality" onclick="com9OnClick()">
           <img src="assets/LiuBin.jpg" alt="LiuBin" /><br />
           <span class="people">Liu Bin</span><br />
           Archaeology, Fudan University
         </td>
       </tr>
       <tr>
-        <td class="sponsor">
+        <td class="sponsor reality" onclick="com10OnClick()">
           <img src="assets/LiMin.jpg" alt="LiMin" /> <br />
           <span class="people">Li Min</span><br />
           Chinese Archaeology, The University of California
@@ -154,15 +157,18 @@ Li Min - Professor of Chinese archaeology at the University of California, Los A
       <a href="https://github.com/mikepierce">Mike Pierce</a> -->
       Copyright &copy; 2023 CACR
     </footer>
-        <!-- 弹窗 -->
+    <!-- 弹窗 -->
     <div id="myModal" class="modal">
-    
       <!-- 关闭按钮 -->
-      <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-    
+      <span
+        class="close"
+        onclick="document.getElementById('myModal').style.display='none'"
+        >&times;</span
+      >
+
       <!-- 弹窗内容 -->
-      <img class="modal-content" id="img01">
-    
+      <img class="modal-content" id="img01" />
+
       <!-- 文本描述 -->
       <!-- <div id="caption"></div> -->
     </div>
