@@ -6,6 +6,7 @@ var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 var i1 = document.getElementById("i1");
 var i2 = document.getElementById("i2");
+var cover = document.getElementById("cover");
 
 // 获取 <span> 元素，设置关闭按钮
 var span = document.getElementsByClassName("close")[0];
@@ -35,6 +36,12 @@ function titleOnClick() {
   // imgPlane();
   modal.style.display = "block";
   modalImg.src = "assets/title.png";
+}
+
+function coverOnClick() {
+  // imgPlane();
+  cover.style.display = "none";
+  document.getElementById("no-cover").style.display = "block";
 }
 
 function placeOnClick() {
